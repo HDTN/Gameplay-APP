@@ -1,28 +1,26 @@
-import React from "react"
-import { View, Text } from 'react-native'
-import { SvgProps } from "react-native-svg"
+import React from 'react';
+import { View, Text } from 'react-native';
 
-import { styles } from "./styles"
-import { theme } from "../../global/themes"
+import {styles} from './styles'
 
 type Props = {
-    title: string
-    subtitle: string
+  title: string;
+  subtitle: string;
 }
 
 export function ListHeader({
-    title,
-    subtitle
-}: Props) {
-    const { secondary50, secondary70 } = theme.colors
-    return (
-        <View style={styles.container}>
-            <Text style={styles.title}>
-                {title}
-            </Text>
-            <Text style={styles.subtitle}>
-                {subtitle}
-            </Text>
-        </View>
-    )
+  title,
+  subtitle
+ }: Props) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>
+        {title}
+      </Text>
+
+      <Text style={styles.subtitle}>
+        {subtitle}
+      </Text>
+    </View>
+  )
 }

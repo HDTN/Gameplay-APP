@@ -1,16 +1,18 @@
-import React from "react"
-import { Image } from "react-native"
+import React from 'react';
+import { Image } from 'react-native';
 
-import { styles } from './styles'
+import { styles }from './styles';
 
+export function GuildIcon(){
+  const uri = 'https://gamerssuffice.com/wp-content/uploads/2019/11/How-to-add-bots-to-discord-500x405.jpg';
+   
+  return(
 
-export function GuildIcon() {
-    const uri = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2FShare%2Ficon%2FLogos%2Fdiscord_logo1600.png&f=1&nofb=1'
-    return (
-        <Image
-            source={{ uri }}
-            style={styles.image}
-            resizeMode="cover"
-        />
-    )
+    <Image 
+      source={{ uri }}
+      style={styles.image}
+      resizeMode="cover"
+    />
+  )
+  
 }
